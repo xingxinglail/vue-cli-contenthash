@@ -4,7 +4,7 @@ import a from 'lodash';
 import b from 'ant-design-vue';
 import c from 'element-plus';
 import router from './router';
-
+console.log(a)
 const app = createApp(App);
 app.use(b)
 app.use(c)
