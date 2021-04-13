@@ -1,13 +1,20 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
   <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <router-view />
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
+import router from './router';
 
 export default {
   name: 'App',
+  setup () {
+    setTimeout(() => {
+      router.push('/')
+    }, 2000);
+  },
   components: {
     HelloWorld
   }
